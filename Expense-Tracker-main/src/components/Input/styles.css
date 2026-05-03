@@ -1,0 +1,39 @@
+.label-input {
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.custom-input {
+    border: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    opacity: 1;
+    background-color: var(--white);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    opacity: 1;
+    border-color: var(--theme);
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
+    transition: all 0.2s ease;
+}
+
+.custom-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .custom-input {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}

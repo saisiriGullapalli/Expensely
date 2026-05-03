@@ -1,0 +1,72 @@
+.my-card {
+    box-shadow: var(--shadow);
+    margin: 1rem;
+    border-radius: 12px;
+    min-width: 280px;
+    flex: 1;
+    font-family: "Montserrat", sans-serif !important;
+    background-color: var(--white);
+    border: 1px solid var(--border-light);
+    transition: all 0.2s ease;
+}
+
+.my-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.ant-card-head-title {
+    margin: 0rem !important;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.my-card h2 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.my-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Card specific colors */
+.my-card:first-child p {
+    color: var(--text-primary);
+}
+
+.my-card:nth-child(2) p {
+    color: var(--success);
+}
+
+.my-card:nth-child(3) p {
+    color: var(--danger);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .my-card {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .my-row {
+        margin: 1rem auto;
+        flex-direction: column;
+    }
+}
