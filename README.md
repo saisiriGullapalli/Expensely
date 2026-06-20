@@ -40,11 +40,15 @@ Expense Categorization: Organize expenses by categories such as Food, Travel, an
 Dynamic Dashboards: Visualize spending patterns with interactive charts and summaries.
 Responsive Design: Ensures a seamless experience across devices, including desktops, tablets, and smartphones.
 State Management: Efficient and scalable data flow using Redux.
+
+
 Tech Stack
 Frontend: React, JavaScript
 Backend: Node.js
 State Management: Redux
 Database & Authentication: Firebase Firestore and Firebase Authentication
+
+
 Installation
 To set up the project locally, follow these steps:
 
@@ -87,6 +91,8 @@ npm install dotenv
 4. Start the development server:
 
 npm start
+
+
 5. Open your browser and navigate to http://localhost:3000 to access the application.
 Usage
 Register or log in using your credentials.
